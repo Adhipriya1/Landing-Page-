@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Desk </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="logo"> User Desk </div>
+    </div>
+</header>
+
+<div class="container main-content">
+
+    <h2 class="section-title">User </h2>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search user by name...">
+    </div>
+
+    <!-- Buttons -->
+    <div class="button-row">
+        <button id="reloadBtn" class="reload-btn">Reload Data</button>
+        <button id="prevBtn" class="page-btn">Previous</button>
+        <button id="nextBtn" class="page-btn">Next</button>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="loading hidden">Fetching Data...</div>
+
+    <!-- Error Message -->
+    <div id="errorBox" class="error-box hidden">
+        <p id="errorMessage">Error fetching data!</p>
+    </div>
+
+    <!-- User Cards -->
+    <div id="userContainer" class="user-grid">
+        <!-- Fetched data will appear here -->
+    </div>
+
+</div>
+
+<footer class="footer">
+    <p>© 2025 API Viewer</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
